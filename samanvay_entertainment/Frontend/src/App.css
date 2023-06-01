@@ -1,0 +1,22 @@
+div{
+  border: 1px solid black;
+  margin: 10px;
+  height: 90vh;
+  text-align: center  ;
+}
+body{
+  background-color: black;
+}
+img{
+  height: 100%;
+  animation: fade 3s ease-in 1s;
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
