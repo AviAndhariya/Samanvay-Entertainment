@@ -1,27 +1,12 @@
-.box {
-  border: 1px solid white;
-  border-radius: 10px;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  width: 30%;
-  background-color: white;
-  color: black;
-}
-.frame {
-  border: 1px solid white;
-}
 body {
-  margin: 10px;
+  margin: 20px;
   background-color: black;
-  justify-items: center;
-  color: white;
+  
 }
-img {
+/* img {
   height: 100%;
   animation: fade 3s ease-in 1s;
-}
+} */
 
 @keyframes fade {
   0% {

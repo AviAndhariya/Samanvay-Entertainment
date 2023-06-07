@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import styles from "../Styles/Home.module.css";
 
 export const Home = () => {
   const [data, setData] = useState([]);
@@ -24,13 +25,14 @@ export const Home = () => {
 
   return (
     <div className="App">
-      <div className="frame">
-        {data.map((e,i) => {
+      <div className={styles["grid-container"]}>
+        {data.map((e, i) => {
           return (
-          <div className="box" key={i}>
-              <p>{e.name}</p>
-              <p>{e.category}</p>
-              <p>{e.date}</p>
+            <div className="frame" key={i}>
+              <img src={e.img} alt="photo" />
+              <p className={styles["grid-item"]}>{e.name}</p>
+              <p className={styles["grid-item"]}>{e.category}</p>
+              <p className={styles["grid-item"]}>{e.date}</p>
             </div>
           );
         })}
