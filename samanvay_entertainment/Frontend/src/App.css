@@ -1,22 +1,33 @@
-div{
-  border: 1px solid black;
+.box {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 30%;
+  background-color: white;
+  color: black;
+}
+.frame {
+  border: 1px solid white;
+}
+body {
   margin: 10px;
-  height: 90vh;
-  text-align: center  ;
-}
-body{
   background-color: black;
+  justify-items: center;
+  color: white;
 }
-img{
+img {
   height: 100%;
   animation: fade 3s ease-in 1s;
 }
 
 @keyframes fade {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
